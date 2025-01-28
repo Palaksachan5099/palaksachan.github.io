@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body{
+        background-image: url("tree.jpg");
+         background-repeat: no-repeat;
+         background-position: top right;
+         margin-right: 200px;
+         background-attachment: fixed;
+        }
+        a:hover{
+            color:hotpink;
+        }
+        a:active{
+            color: blue;
+        }
+        img{
+            border: 1px solid  brown;
+            border-radius: 10px ;
+            padding: 5px;
+            width: 15px;
+        }
+        img:hover{
+            box-shadow: 0 0  2px 1px green;
+        }
+        div{
+            border:1px solid red;
+            margin-left: 100px;
+        }
+        p.ex1{
+            margin-left: inherit;
+        }
+        table{
+            border-collapse: collapse;
+            width: 100%;
+            text-align: center;
+        }
+        /* tbody is used for not coloring the headline */
+        tbody th,td{
+            border-bottom: 2px solid grey;
+            padding: 10px;
+            color:pink;
+        }
+        tbody tr:nth-child(even){
+            background-color: teal;
+        }
+        </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> the background-attachment</h1>
+    <p>my name is palak sachan</p>
+    <p>my name is palak sachan</p>
+    <p>my name is palak sachan</p>
+    <p>my name is palak sachan</p>
+    
+    <h2> styling a link depending on state</h2>
+    <p><b><a href="https://www.lpu.in/">This is a link</a></b></p>
+    <p><b>Note: </b>a.hover most come after a.link and a.visited in the css define in order to be effective.</p>
+    <h3>thumbnail</h3>
+    <p>click on the image</p>
+    <a class= "hi" target="_blank" href="tree.jpg">
+        <img src="tree.jpg" alt="tree" style="width: 150px">
+    </a>
+    <h2>use of the inherit value </h2>
+    <p>let the left margin be inherit frem the parent element: </p>
+<div>
+    <p class="ex1">this paragraph has an inherit left margin(from the div element)</p></div>
+    <table>
+        <thead>
+            <tr>
+                <th>Roll no.</th>
+                <th>Course</th>
+                <th>Marks</th>
+            </tr>
+            <tr>
+                <th>1</th>
+                <th>BA</th>
+                <th>65</th>
+            </tr>
+            <tr>
+                <th>2</th>
+                <th>MBA</th>
+                <th>75</th>
+            </tr>
+            <tr>
+                <th>3.</th>
+                <th>BA</th>
+                <th>90</th>
+            </tr>
+            <tr>
+                <th>4</th>
+                <th>MBA</th>
+                <th>80</th>
+            </tr>
+            <tr>
+                <th>5</th>
+                <th>BA</th>
+                <th>34</th>
+            </tr>
+            
+        </thead>
+    </table>
+ 
+</body>
+</html>
